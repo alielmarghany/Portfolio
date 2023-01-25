@@ -290,67 +290,279 @@ h5 {
 }
 
 @media (max-width: 1023px) {
-    .home{
-        padding: 5px 10px;
-    }
-
-    .logo{
-        font-size: 0.8em;
-    }
-
-    .navigation a{
-        padding-left: 5px;
-        font-size: 1.0em;
-    }
-
-    .title{
-        font-size: 1.3em;
-    }
-
-    section{
-        padding: 40px 10px;
-    }
-
-    .content h2{
-        font-size: 1em;
-    }
-
-    .content h3{
-        font-size: 0.9em;
-    }
-
-    .content{
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-}
-
-@media (max-width: 641px) {
-    body{
-        font-size: 12px;
-    }
-
-    .main-content h2{
-        font-size: 0.8em;
-    }
-
-    .main-content h3{
-        font-size: 1.4em;
-    }
-}
-
-@media (max-width: 300px) {
-    body{
+    html {
+        font-family: 'Josefin Sans', sans-serif;
         font-size: 8px;
+        color: var(--lightColor);
+    }
+    
+    .home {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bgColor-1);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    span {
+        color: var(--primaryColor);
+    }
+    
+    h2 {
+        font-size: 3.0rem;
+        letter-spacing: 0.06rem;
+        cursor: pointer;
     }
 
-        .main-content h2{
-        font-size: 0.5em;
+    nav {
+        padding-top: 2.0rem;
+        padding-right: var(--padding);
+        padding-left: var(--padding);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        z-index: 999;
+    }
+    
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0.2rem 0.6rem;
+        font-size: 2.9rem;
+    }
+    
+    nav ul li a {
+        color: var(--lightColor);
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: 0.4s;
+    }
+    
+    nav ul li a:hover {
+        color: var(--primaryColor);
+    }
+    
+    .btn {
+        background-color: var(--primaryColor);
+        border-radius: 50px;
+        border: 2px solid transparent;
+        padding: 1.87rem;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: var(--lightColor);
+        font-weight: bold;
+        transition: 0.4s;
+        font-size: 2.6rem;
+    }
+    
+    .btn:hover {
+        background-color: transparent;
+        border: 2px solid var(--primaryColor);
+    }
+    
+    .content {
+        padding: 0 var(--padding);
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    .main-content h3{
-        font-size: 1.1em;
+    .content .btn {
+        font-size: 5.5rem;
+        font-weight: 500;
+    }
+    
+    .container-texts {
+        position: relative;
+        bottom: 70px;
+    }
+    
+    h1 {
+        font-size: 5.1rem;
+        margin: 2.9rem 0;
+    }
+    
+    h3 {
+        font-size: 3.5rem;
+        margin-bottom: 5.9rem;
+    }
+    
+    h4 {
+        font-size: 3.9rem;
+        letter-spacing: 0.12rem;
+        margin-bottom: 3.2rem;
+        color: var(--secondryColor);
+    }
+
+    h5 {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    p {
+        color: var(--secondryColor);
+        letter-spacing: 1px;
+        line-height: 5.3rem;
+        font-size: 2.2rem;
+    }
+    
+    .home .container-pics {
+        display: none;
+    }
+    
+    .about {
+        background-color: var(--bgColor-2);
+        padding: 2rem var(--padding);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    
+    
+    .about .container-pics {
+        width: 35%;
+    }
+    
+    .about .container-pics img {
+        width: 90%;
+    }
+    
+    .about .container-texts {
+        width: 35%;
+    }
+    
+    .services {
+        background-color: var(--bgColor-1);
+        padding: 2rem var(--padding);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .services h1 {
+        padding: 50px;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .box {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .card {
+        background-color: var(--bgColor-2);
+        width: 200px;
+        box-shadow: 0 5px 25px rgba(1 1 1 / 25%);
+        border-radius: 10px;
+        padding: 25px;
+        margin: 15px;
+        transition: 0.7s ease;
+        text-align: center;
+    }
+    
+    .card h3 {
+        margin-bottom: 20px;
+    }
+    
+    .card:hover {
+        transform: scale(1.1);
+    }
+    
+    .icon {
+        color: var(--primaryColor);
+        font-size: 8em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .products {
+        background-color: var(--bgColor-2);
+        padding: 2rem var(--padding);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .products .content {
+        margin-top: 30px;
+    }
+    
+    .products-card {
+        background-color: var(--bgColor-1);
+        border: 5px solid var(--bgColor-1);
+        min-height: 14em;
+        width: 23em;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 20px;
+        transition: 0.7s ease;
+    }
+    
+    .products .content {
+        margin-top: 30px;
+    }
+    
+    .product-image img{
+        width: 100%;
+    }
+    
+    .products-card:hover {
+        transform: scale(1.1);
+    }
+    
+    .products-card:hover .product-image {
+        opacity: 0.9;
+    }
+    
+    .product-info {
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .product-name {
+        font-size: 1.2em;
+        color: var(--primaryColor);
+    }
+    
+    .more-info {
+        text-decoration: none;
+        font-size: 1.3em;
+        font-weight: 500;
+        color: var(--lightColor);
+    }
+    
+    .contact {
+        background-color: var(--bgColor-1);
+        padding: 2rem var(--padding);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .footer {
+        background-color: var(--bgColor-2);
+        color: var(--lightColor);
+        padding: 2em;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer-title {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    
+    .footer .social-icons a {
+        color: var(--primaryColor);
+        font-size: 1.7em;
+        padding: 0 12px 0 0;
     }
 }
