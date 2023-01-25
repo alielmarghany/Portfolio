@@ -421,7 +421,15 @@ h5 {
         justify-content: space-around;
     }
     
-    
+    .about .container-texts h1 {
+        font-size: 8.2rem;
+        font-weight: 700;
+        padding-top: 90px;
+    }
+
+    .about .container-texts p {
+        font-size: 2.9rem;
+    }
     
     .about .container-pics {
         width: 35%;
@@ -441,6 +449,7 @@ h5 {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        flex-direction: column;
     }
     
     .services h1 {
@@ -458,7 +467,7 @@ h5 {
     
     .card {
         background-color: var(--bgColor-2);
-        width: 200px;
+        width: 280px;
         box-shadow: 0 5px 25px rgba(1 1 1 / 25%);
         border-radius: 10px;
         padding: 25px;
@@ -488,6 +497,7 @@ h5 {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        flex-direction: column;
     }
     
     .products .content {
@@ -498,7 +508,7 @@ h5 {
         background-color: var(--bgColor-1);
         border: 5px solid var(--bgColor-1);
         min-height: 14em;
-        width: 23em;
+        width: 700px;
         overflow: hidden;
         border-radius: 10px;
         margin: 20px;
@@ -528,13 +538,13 @@ h5 {
     }
     
     .product-name {
-        font-size: 1.2em;
+        font-size: 4.9em;
         color: var(--primaryColor);
     }
     
     .more-info {
         text-decoration: none;
-        font-size: 1.3em;
+        font-size: 4.5em;
         font-weight: 500;
         color: var(--lightColor);
     }
@@ -545,6 +555,15 @@ h5 {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .contact .card {
+        width: 380px;
+    }
+
+    .content .info {
+        font-size: 2.9rem;
     }
     
     .footer {
@@ -556,7 +575,7 @@ h5 {
     }
     
     .footer-title {
-        font-size: 1.3em;
+        font-size: 3.9em;
         font-weight: 600;
     }
     
